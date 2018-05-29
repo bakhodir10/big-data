@@ -1,4 +1,4 @@
-package com.mum.assignment1;
+package assignment1;
 
 import java.io.File;
 import java.io.IOException;

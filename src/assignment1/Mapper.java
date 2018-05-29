@@ -1,4 +1,4 @@
-package com.mum.assignment1;
+package assignment1;
 
 public class Mapper<K, V> {
     private K key;
