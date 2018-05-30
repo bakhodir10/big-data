@@ -1,0 +1,8 @@
+Given a text-file
+The program will extract each word and form a key-value pair
+where the key is the word and value is integer one.  Note that your program
+should treat Cat and cat as the same word.
+Each pair is inserted into a List. Sort the List using Collections.
+This may involve writing a comparator for the pair class.
+Output the List Note that tokens such as
+and abc_ptr  are not words. However, key-value is two words.
