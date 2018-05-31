@@ -1,10 +1,10 @@
 package assignment2;
 
-public class Reduce<K, V> {
+public class Reducer<K, V> {
     private K key;
     private V value;
 
-    public Reduce(K key, V value) {
+    public Reducer(K key, V value) {
         this.key = key;
         this.value = value;
     }

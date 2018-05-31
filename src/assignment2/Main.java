@@ -7,6 +7,7 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.Scanner;
 
+@SuppressWarnings("Duplicates")
 public class Main {
 
     public static void main(String[] args) throws IOException {
@@ -47,11 +48,11 @@ public class Main {
 //        reducerInput.forEach(System.out::println);
 
         // make reduce Output
-        List<Reduce> reducerOutput = new ArrayList<>();
+        List<Reducer> reducerOutput = new ArrayList<>();
         for (GroupByPair<String, Integer> g : reducerInput) {
             int count = 0;
             for (int c : g.getValues()) count += c;
-            reducerOutput.add(new Reduce<>(g.getKey(), count));
+            reducerOutput.add(new Reducer<>(g.getKey(), count));
         }
 
         reducerOutput.forEach(System.out::println);
