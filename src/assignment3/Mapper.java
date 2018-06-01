@@ -21,6 +21,8 @@ public class Mapper<K, V> {
 
     @Override
     public String toString() {
-        return pairs.toString();
+        StringBuilder b = new StringBuilder();
+        for (Pair<K, V> pair : this.pairs) b.append(pair.toString()).append("\n");
+        return b.toString();
     }
 }
